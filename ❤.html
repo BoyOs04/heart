@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+        <style>
+            body{
+                font-family: 'Pacifico', serif;
+                color: rgb(243, 101, 101);
+                font-size: 28px;
+                text-align: center;
+                text-shadow: 1px 5px 5px rgb(6, 7, 2);
+                text-anchor: start; 
+                text-size-adjust: 50%; 
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size:cover;
+                background-position: center;
+                background-image: url(https://snz04pap002files.storage.live.com/y4mReqIhtrdgO4wdDm3P_m1qmn89bHC4v89V5-EOMqsveK4G2JOdEl_Kz0xlqCUCsDFlGfla5Y3JCFX61L6swu5bl2GrJGNOuFOT7_cDSHJh2vf89flsI6TZ2_XFuK_S79RDz6_YO-ERgkoWis07shNl5a5FrSDSIHoa0lm4bqCfxaRptvdS0ISqMqLyJTgQaWP?width=7000&height=5600&cropmode=none);
+      }        
+             h1{
+                border-style:groove;
+                border-radius: 25px;
+                border-end-end-radius: 20px 20px;
+                box-sizing: content-box;
+                border-bottom-left-radius: 20px ;
+                background-blend-mode: screen;
+                background-image: url(https://snz04pap002files.storage.live.com/y4mReqIhtrdgO4wdDm3P_m1qmn89bHC4v89V5-EOMqsveK4G2JOdEl_Kz0xlqCUCsDFlGfla5Y3JCFX61L6swu5bl2GrJGNOuFOT7_cDSHJh2vf89flsI6TZ2_XFuK_S79RDz6_YO-ERgkoWis07shNl5a5FrSDSIHoa0lm4bqCfxaRptvdS0ISqMqLyJTgQaWP?width=7000&height=5600&cropmode=none);
+                background-color: transperent;
+                box-shadow: 5px 7px 8px black;   
+            }
+
+            h3{
+                border-style:ridge;
+                border-radius: 19px;
+                text-orientation:sideways-right;
+                background-origin: content-box;
+                -webkit-background-origin:padding-box;
+                -webkit-animation-fill-mode: both;
+                box-shadow: 5px 7px 8px black;
+                background-image: url(https://snz04pap002files.storage.live.com/y4mReqIhtrdgO4wdDm3P_m1qmn89bHC4v89V5-EOMqsveK4G2JOdEl_Kz0xlqCUCsDFlGfla5Y3JCFX61L6swu5bl2GrJGNOuFOT7_cDSHJh2vf89flsI6TZ2_XFuK_S79RDz6_YO-ERgkoWis07shNl5a5FrSDSIHoa0lm4bqCfxaRptvdS0ISqMqLyJTgQaWP?width=7000&height=5600&cropmode=none);
+            }
+             /* Desain custom untuk tombol */
+.custom-btn {
+  border: none; /* Hapus border */
+  background-color: #ffffff; /* Hapus background */
+  cursor: pointer; /* Ubah kursor saat di-hover */
+  box-shadow: 5px 7px 8px black;   
+}
+
+/* Desain gambar di dalam tombol */
+.btn-img {
+  display: ; /* Atur gambar agar dapat diatur posisinya */
+  margin: 0 auto; /* Tengahkan gambar secara horizontal */
+  max-width: 80%; /* Pastikan gambar tidak melebihi lebar tombol */
+  background-color:#ffaadff0;
+  box-shadow: 5px 7px 8px black;
+}
+
+            
+            button{
+            font-family: 'Pacifico', serif;
+                background-color: #4CAF50; 
+                border: auto black;
+                color: white; 
+                padding: 10px 20px;
+                text-align: center; 
+                text-decoration: none; 
+                display: inline-block;
+                margin: 4px 2px; 
+                cursor: pointer;
+                }
+             #btn-mau {
+                 background-color: #ffd5f4;
+                 font-size:9px;
+                 border-radius:122px;
+                 box-shadow: 5px 7px 8px black;
+            }
+
+             #random-btn {
+                 background-color: red;
+                 font-size: 24px; 
+                 border-radius:42px;
+                 box-shadow: 5px 7px 8px black;
+            }
+              
+        </style>
+        <title> Kamu mau? </title>
+    </head>
+
+    <body>
+       
+        <div class="h1">
+            <h1>Hai Cantik!</h1>
+            <h3 class="h3">Kamu mau ngak jadi Pacar aku ?</h3>
+               <button class="custom-btn">
+                   <img class="btn-img" src="https://dsm01pap002files.storage.live.com/y4moIRzXVeyb4oETNDoN4Hprn_4JI_K5_3qY_Rz7mTsbkBUBXJRJjtSiUY-8KGMoj4jP9JEw8b7EAfZld2egNiBkdSUI-Pt4H2UBaLQ6M4TEQ5l5-t_iV1cTbAzVzfs6kFj2hwlNkQERjEOcvjYaEJWzDw3OQAsCS4F_K5gPLMk4nVLzH4uhUQ26iNgwDBfLC8M?width=236&height=284&cropmode=none" alt="gambar"/> </img>   
+               </button>
+    </div>
+    
+                <button id="btn-mau" onclick="alert('I love You')">Mau</button>
+				<br><button id="random-btn" onclick="randomize()">Ngak Mau</button>
+       <script>
+          function randomize() {
+            var btn = document.getElementById("random-btn");
+            var maxX = window.innerWidth - btn.clientWidth;
+            var maxY = window.innerHeight - btn.clientHeight;
+            var randomX = Math.floor(Math.random() * maxX);
+            var randomY = Math.floor(Math.random() * maxY);
+            btn.style.position = "absolute";
+            btn.style.left = randomX + "px";
+            btn.style.top = randomY + "px";
+            }
+        </script>
+            </br>
+            <a herf="https://www.instagram.com/ryo0btw">
+                <img src="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png" alt="Instagram" width="20px"height="auto"></a>
+                <a href="https://wa.me/+628981868117">
+                    <img src="https://static.whatsapp.net/rsrc.php/yz/r/lOol7j-zq4u.svg" alt="Whatsapp" width="20px"height="auto"></a>
+                <a href="https://fb.me/ryolinelejan.m">
+                    <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Facebook" width="20px"height="auto" border-radius="2px"</a>
+                
+    </body>
+</html>
