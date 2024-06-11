@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Nama kamu siapa?</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <style>
+        body {
+            font-family: 'Montserrat', serif;
+            color: rgb(243, 101, 101);
+            font-size: 1.5vw; /* Responsive font size */
+            text-align: center;
+            background-image: url('https://dsm04pap002files.storage.live.com/y4mgDHpkfTCrEAeVRvX6dwbYycFvaKxXFkPGKokgiORE1zMsYdY6XZK24EPPHzdrzTLw7HNXpG-i07L3OU74FJnt0mj8Eo4Zy562KYIMwM83v8r4JKyvoEGcQKay2oYzFy1IfV7blJN3CKZ2WW_IRAlb7evxQ6UXigiMKRem88cx32J32aL779Ph_WTdU_EL_bK?width=626&height=939&cropmode=none'); /* Replace with your chosen image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            padding: 2vw; /* Responsive padding */
+            background:#eaffff;
+            border-radius: 1vw; /* Responsive border-radius */
+            box-shadow: 0px 1vw 2vw black;
+        }
+        input, button {
+            font-family: 'Montserrat', serif;
+            font-size: 1.5vw; /* Responsive font size */
+            padding: 1vw; /* Responsive padding */
+            margin: 1vw; /* Responsive margin */
+            border-radius: 1vw; /* Responsive border-radius */
+            color: green;
+        }
+        #judul {
+            color: red;
+            text-shadow: 0px 0.3vw 0.4vw black;
+        }
+        @media (max-width: 768px) {
+            body {
+                font-size: 4vw; /* Adjust font-size for smaller screens */
+            }
+            .container {
+                padding: 5vw; /* Adjust padding for smaller screens */
+            }
+            input, button {
+                font-size: 4vw; /* Adjust font-size for smaller screens */
+                padding: 2vw; /* Adjust padding for smaller screens */
+            }
+        }
+    </style>
+    <script>
+        function saveName() {
+            const name = document.getElementById('name-input').value;
+            localStorage.setItem('name', name);
+            window.location.href = '❤️.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h3 id="judul">MASUKAN NAMA KAMU 🔥</h3>
+        <input type="text" id="name-input" placeholder="Nama kamu?" maxlength="20" required>
+        <button type="button" onclick="saveName()">🤍💜</button>
+    </div>
+</body>
+</html>
